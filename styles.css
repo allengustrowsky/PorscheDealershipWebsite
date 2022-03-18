@@ -1,0 +1,231 @@
+
+:root {
+    --main-font-style: verdana;
+    --img-border-radius: 10px;
+    --image-shadowing: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --text-shadowing-large: 2px 2px 4px rgb(162, 158, 158);
+    --text-shadowing-small: 0px 3px 12px rgb(160, 160, 160)
+}
+
+/* GLOBAL RESET */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* navbar and hero banner */
+
+#heroBannerContainer {
+    background-image: url("dealership.png");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar-container {
+    margin-top: 3px;
+    display: flex;
+    height: 70px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: Geneva;
+}
+
+.navbar-item1 {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+}
+
+.navbar-item1 img {
+    /* width: 70px; */
+    height: 60px;
+    border-radius: 10px;
+}
+
+.navbar-item1 span {
+    font-size: 25pt;
+    text-shadow: var(--text-shadowing-large);
+}
+
+.navbar-item2 {
+    display: inline-flex;   
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar-item2 span {
+    font-size: 13pt;
+    padding: 25px 15px;
+    transition: background-color, 0.15s ease-out 0s;
+    border-radius: 1px;
+    /* text-shadow: var(--text-shadowing); */
+}
+
+
+
+
+/* body */
+
+#carListHeader1 {
+    font-family: var(--main-font-style);
+    font-weight: normal;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 140px;
+    text-shadow: var(--text-shadowing-large);
+}
+
+#carListHeader2 {
+    font-family: var(--main-font-style);
+    font-weight: 200;
+    font-size: 25pt;
+    text-align: center;
+    margin-bottom: 140px;
+    text-shadow: var(--text-shadowing-large);
+}
+
+.carListLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.carListRight {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#boxster718 {
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--image-shadowing);
+}
+
+#cayenne {
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--image-shadowing);
+}
+
+#porsche911 {
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--image-shadowing);
+    filter: drop-shadow();
+}
+
+#cayenneCoup {
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--image-shadowing);
+}
+
+.inlineH1 {
+    display: inline;
+    font-family: var(--main-font-style);
+    font-size: 18pt;
+    text-shadow: none;
+}
+
+.inlineP {
+    display: inline;
+    font-family: var(--main-font-style);
+    font-size: 16pt;
+}
+
+.carInfoLeft {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 10%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--text-shadowing-small);
+}
+
+.carInfoRight {
+    display: inline-flex;
+    flex-direction: column;
+    padding-right: 10%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--text-shadowing-small);
+}
+
+
+
+
+/* footer */
+
+footer {
+    margin-top: 80px;
+    height: 100px;
+    background-color: rgb(33, 33, 33);
+}
+
+#socContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.soc {
+    width: 35px;
+    height: 35px;
+    color: white;
+}
+
+
+
+
+/* responsive design */
+@media screen and (max-width: 900px) {
+    .navbar-item2 {
+        gap: 2px;
+    }
+
+    .navbar-item2 span {
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .navbar-item2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .carListLeft, .carListRight {
+        flex-direction: column;
+    }
+
+    .carInfoLeft, .carInfoRight {
+        padding: 0;
+    }
+
+    .navbar-container {
+        height: 180px;
+    }
+
+    .navbar-item2 {
+        flex-wrap: wrap;
+        padding: 5px 5px;
+    }
+}
