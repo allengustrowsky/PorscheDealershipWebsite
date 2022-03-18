@@ -1,5 +1,5 @@
 
-
+// change buttons and pointer on hover
 const items = document.querySelectorAll(".navbar-item2>span")
 items.forEach((item) => {
     item.addEventListener("mouseover", () => {
@@ -16,4 +16,8 @@ items.forEach((item) => {
     
 })
 
-//pointer type
+const logo = document.getElementById("porscheLogo");
+logo.addEventListener("mouseover", (event) => {
+    event.target.style.cursor = "pointer"
+})
+
