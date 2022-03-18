@@ -16,8 +16,4 @@ items.forEach((item) => {
     
 })
 
-const logo = document.getElementById("porscheLogo");
-logo.addEventListener("mouseover", (event) => {
-    event.target.style.cursor = "pointer"
-})
 
