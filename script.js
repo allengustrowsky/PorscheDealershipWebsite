@@ -1,6 +1,6 @@
 
 // change buttons and pointer on hover
-const items = document.querySelectorAll(".navbar-item2>span")
+const items = document.querySelectorAll(".navButton")
 items.forEach((item) => {
     item.addEventListener("mouseover", () => {
         console.log("hovered over")
@@ -15,5 +15,3 @@ items.forEach((item) => {
     })
     
 })
-
-
