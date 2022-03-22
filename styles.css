@@ -255,8 +255,9 @@ footer {
 }
 
 .contactH1 {
-    font-size: var(--main-font-style);
+    font-family: var(--main-font-style);
     font-size: 30pt;
+    font-weight: lighter;
 }
 
 .headerHr {
@@ -264,3 +265,42 @@ footer {
    width: 95%;
 }
 
+#contactForm {
+    margin: 70px 0;
+}
+
+.form {
+    margin: 35px 0; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: var(--main-font-style);
+}
+
+.messageContainer {
+    font-size: 22pt;
+
+}
+
+#formFlexContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;   
+}
+
+#btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#formSubmitBtn {
+    width: 120px;
+    height: 40px;
+}

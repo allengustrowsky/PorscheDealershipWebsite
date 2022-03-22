@@ -15,3 +15,7 @@ items.forEach((item) => {
     })
     
 })
+
+
+// wipe the form's innerHTML after submission
+//add a 'send another msg' button

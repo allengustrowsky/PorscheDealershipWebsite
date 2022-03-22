@@ -32,8 +32,28 @@
         <main>
             <hr class="headerHr">
             <div class="supportHeaderContainer">
-                <h1 class="contactH1">Contact</h1>
+                <h1 class="contactH1">Contact Us</h1>
                 <img src="carDealer.jpeg" alt="car dealer" id="carDealerImg"/>
+                <form id="contactForm">
+                    <div class="form messageContainer">
+                        <label for="message">How Can We Help You?</label>
+                        <input type="textbox" name="message" placeholder="Hi, I'm curious about..."/>
+                    </div>
+                    <div id="formFlexContainer">
+                        <div class="form nameContainer">
+                            <label for="name">Please Enter Your Name: </label>
+                            <input type="text" name="name" placeholder="Bob Jones"/>
+                        </div>
+                        <div class="form emailContainer">
+                            <label for="email">Please Enter Your Email: </label>
+                            <input type="text" name="email" placeholder="johndoe@sample.com"/>
+                        </div>
+                    </div>
+                    <div id="btnContainer">
+                        <button type="submit" id="formSubmitBtn" formtarget="_self">Submit</button>
+                    </div>
+                </form>
+
             </div>
         </main>
     </body>
